@@ -9,19 +9,31 @@
     <meta name = "keywords" content = "html, css, learning"> <!---keywords are best used by search engines to help describe your website and have it easy to find-->
     <!--all these above meta tags have to do with search engines-->
     <meta charset = "UTF-8"> <!---helps to show what language this is in, helps the browser-->
+    <style>
+      body {
+        background: gainsboro;
+      }
+    </style>
+    <link rel = "stylesheet" href = "css/style.css">
   </head>
 
   <body>
     <header>
       <!-- What is a header? It is usually what appears at the top of the page, Titles, Headings, etc -->
+       <h1>Video Games</h1> <!-- This is the largest of the heading tags, best used for top title-->
+    <nav>
+      <ul>
+        <li> <a href = "#section1"> Section 1</a></li>
+        <li> <a href = "#section2"> Section 2</a></li>
+        <li> <a href = "#gallery"> Section 3</a></li>
+        <li> <a href = "page2.html"> Page 2 </a></li>
+      </ul>
+    </nav> <!-- Generally the navigation tag (nav) goes into the header, but it can go into other places without giving an error-->
     </header>
-
-    <h1>Video Games</h1> <!-- This is the largest of the heading tags, best used for top title-->
-    <nav></nav> <!-- Generally the navigation tag (nav) goes into the header, but it can go into other places without giving an error-->
 
     <main>
 
-      <section>
+      <section id = "section1">
 
         <h2> Origins </h2> <!-- The next size down of headers-->
         <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis incidunt tenetur quibusdam quasi assumenda. 
@@ -30,7 +42,7 @@
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae culpa minus, inventore aut architecto consectetur quod. Aut praesentium minus voluptas adipisci unde doloribus, sit dolor perspiciatis quos modi neque asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio perferendis vero sint earum quibusdam aspernatur minus animi voluptas sapiente voluptatem vel recusandae culpa magni dicta perspiciatis, quo enim. Tenetur, commodi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem tenetur repudiandae a culpa quae expedita, iure doloremque, minima quo tempore earum quos, sed veniam quia. Veritatis eaque commodi praesentium hic.</p>  
       </section>
         <!-- Generally, theres only really 1 H1 in a document because its like the TITLE header, h2-h6 tends to be used multiple times because of the differing sizes, but they're all designed to title an area -->
-      <section>
+      <section id = "section2">
         <h3> Favorite Game Genres</h3> <!-- Another size down of header-->
         <ol>  <!-- ordered list, so once you put items into the list it'll be numbered-->
           <li> Story-Based Games</li>
@@ -62,7 +74,7 @@
         <p> All the different six headers above.</p>
       </section>
 
-      <section>
+      <section id = "gallery">
         <h5> Inline Tags</h5>
         <p> This content is <strong> strong! </strong> </p>
         <p> This content is <b> bold! </b> </p>
