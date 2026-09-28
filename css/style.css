@@ -29,6 +29,67 @@ h3{
     color: plum;
 }
 
+img {
+    width: 200px;
+    /* when you adjust the width or the height, it'll automatically do the other part for u -- there is no need to do both */
+    padding: 20px;
+/*the padding helps put space between the items */
+    border-width: 10px;
+    border-color: white;
+    border-style: solid;
+}
+
+header{
+    width: 960px;
+    border: 1px white solid;
+    padding: 10px;
+    margin-top: -7px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    /* what auto does is that it automatically adjusts the container for the browser window, it helps center the content */
+}
+
+main{
+    width: 960px;
+    border: 1px white solid;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    margin: 0 auto; /* top and bottom 0, left and right are auto */
+}
+
+footer {
+    width: 960px;
+    height: 10px;
+    border: 1px white solid;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+nav{
+
+}
+
+nav ul {
+    display:grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: auto;
+    gap: 20px;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+
+}
+
+nav ul li a:hover{
+
+}
 /* For importing font families, you want to import at the top of the document, to make sure it "downloads" or imports the fonts first.
 You cannot have HTML in a CSS file as that will "break" the CSS file.
 Using a font family that has a lot of fonts is useful because you can change a lot within it. */
