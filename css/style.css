@@ -37,7 +37,12 @@ img {
     border-width: 10px;
     border-color: white;
     border-style: solid;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
 }
+/*margin padding helps put spacing where necessary, number is the amount of pixel space you would like */
 
 header{
     width: 960px;
@@ -68,6 +73,52 @@ footer {
     margin: 0 auto;
 }
 
+.inline{
+    display: inline-block;
+}
+/* if you want to put things next to each other, you can use the inline attribute, but it is pretty clunky and "primitive" 
+        better tech to use is Flexbox or CSS Grid, imagine it like evolution: inline is like leanreing how to walk, its simple but you have to do all the extra steps -> then flex box, which is the next step up and it was originally designed for navigations, its strong suit is things in one row
+        next with CSS Grid is the final bit of the evolution, has all the attributes of flexbox*/
+
+
+        /*How grid works is that it looks at the children inside of the container */
+.bgimage{
+    background-image: url("../images/gamecontroller.jpg");
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: auto;  /*For background size you can set it to auto, contain, or cover: contaion = set image to be within the size of the container, auto is..auto, cover = sets image to be size of the whole container */
+    background-position: center;
+    grid-template-columns: 200px;
+    grid-template-rows: 100px;
+    align-content: center;
+    justify-items: center;
+}   
+
+.imagegallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /*this means its gonna divide the width of the image gallery container and break it down into 4 fractions, basically look for 4 childrens and place them in even containers*/
+    grid-template-rows: auto;
+    gap: 20px;
+}
+
+.imagegallery>img{
+    width: 100%;
+    border-width: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+/* For a background image, you need to set the width and height */
+
+.fig{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    justify-items: center;
+}
+
+/* Professor recommends writing all of the tags for navigation */
+
 nav{
 
 }
@@ -77,18 +128,25 @@ nav ul {
     grid-template-columns: 100px 100px 100px 100px;
     grid-template-rows: auto;
     gap: 20px;
+    justify-content: space-between;
+    align-content: end;
+    align-items: center;
+    justify-items: center;
 }
 
 nav ul li{
     list-style: none;
 }
 
-nav ul li a{
+/* difference between nav > ul is that you're being hyper specific, it would look for a parent nav tag with a child of an unordered list
+and then with nav ul li, it would look for an ul inside the nav*/
 
+nav ul li a{
+    text-decoration: none;
 }
 
 nav ul li a:hover{
-
+    background-color: blanchedalmond;
 }
 /* For importing font families, you want to import at the top of the document, to make sure it "downloads" or imports the fonts first.
 You cannot have HTML in a CSS file as that will "break" the CSS file.
