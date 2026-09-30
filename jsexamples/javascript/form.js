@@ -12,8 +12,7 @@ select.addEventListener("change", function(){
 
 button.addEventListener("click", function(){
     if(select.value == "koala"){
-        addImages.innerHTML = "<img src='https link' alt = 'koala'>";
-        addImages.style.width = "200px";    
-            //seeing how u put quotations, this wouldnt let you do multiple quotes in this line
+        addImages.innerHTML = "<img src='https link' alt = 'koala' + 'width = 200'>"; 
+            //seeing how you put quotations, this wouldnt let you do multiple quotes in this line
     }
 });
