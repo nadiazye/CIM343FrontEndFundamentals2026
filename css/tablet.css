@@ -1,0 +1,7 @@
+@import url(style.css);
+
+/* now that you imported, you must do the necessary adjustments to make things look good */
+
+header, main, footer{
+    width: 700px;
+}

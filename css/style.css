@@ -117,6 +117,18 @@ footer {
     justify-items: center;
 }
 
+.offset{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    gap: 20px;
+}
+
+.grouping{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
 /* Professor recommends writing all of the tags for navigation */
 
 nav{
@@ -151,3 +163,7 @@ nav ul li a:hover{
 /* For importing font families, you want to import at the top of the document, to make sure it "downloads" or imports the fonts first.
 You cannot have HTML in a CSS file as that will "break" the CSS file.
 Using a font family that has a lot of fonts is useful because you can change a lot within it. */
+
+/*You can make three separate files and then copy/paste the code  for each device's CSS, but it's inefficient because if you wanted to change something about an overall look, you'd have to go into all three and change the same three times.
+
+The more efficient way to do it is to add an import*/

@@ -1,0 +1,30 @@
+@import url(style.css);
+
+header, main, footer{
+    width: 360px;
+    /* although the breakpoint of the width was around 460, your width should be much less than that
+    why? because if you look at the different dimensions, it's flexible with the different devices*/
+
+}
+
+/* now to help the website look better, you want to look within your style.css file and see what things you have to change to help things fit and look better*/
+
+nav ul{
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 1fr;
+    height: auto;
+}
+
+nav ul li{
+    width: 100%;
+}
+
+.imagegallery{
+ grid-template-rows: 100% 100% 100% 100%;
+ grid-template-columns: auto;
+
+}
+
+.imagegallery img{
+    width: 100%;
+}
