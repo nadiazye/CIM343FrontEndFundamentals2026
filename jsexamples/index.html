@@ -8,6 +8,8 @@
     <!--<script src = "javascript/gettingStarted.js" defer></script> -->
     <script src="javascript/clicking.js" defer></script>
     <script src = "javascript/tabs.js" defer></script>
+    <script src = "javascript/gallery.js" defer></script>
+    <script src = "javascript/form.js" defer></script>
 </head>
 <body>
     <h1 id="heading1"></h1>
@@ -35,6 +37,26 @@
         </div>
         <div>
             <img class = "images" src = "images/xxx">
+        </div>
+    </section>
+
+    <section>
+        <h3> Choose your favorite animal:</h3>
+        <form>
+            <label for = "animals"> Aniaml:</label>
+            <select name = "animals" id = "animals">
+                <option value = "koala">Koala</option>
+                <option value = "gorilla">Gorilla</option>
+                <option value = "zebra">Zebra</option>
+                <option value = "tiger">Tiger</option>
+            </select>
+            <button id = "submit" type = "button">Submit</button>
+            <!-- A button actually has two different types: it has button and it has submit
+             type button refers to it as more of a gooey button
+             type submit is specifically for forms, so when you press the submit button it sends a request thru the browser -->
+        </form>
+        <div id = "addImages">
+
         </div>
     </section>
 </body>
